@@ -1,0 +1,154 @@
+<!-- <html>
+
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="vendors/jquery.easings.min.js"></script>
+
+
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<div id="fullpage">
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+</div>
+
+</html>
+ -->
+
+    
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>food for foodies</title>
+	<meta name="Abhishek" content="Golden Webdevelopers" />
+
+
+	<link rel="stylesheet" type="text/css" href="dist/jquery.fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples/examples.css" />
+
+
+	<style>
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img{
+			/*background-color : rgb(234, 180, 72)*/
+			},
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="dist/jquery.fullpage.js"></script>
+	<script type="text/javascript" src="examples/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#eab448', '#4BBFC3', '#7BAABE', '#ccddff'],
+				anchors: ['Indian-food', 'Chinese-food', 'Maxican-food', 'Japanese-food', 'Timings'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+<!-- <ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
+ -->
+
+<div id="fullpage">
+	<div class="section " id="section0" >
+		<h1>Indian</h1>
+		 <input type="hidden" name="id" value="1" />
+		<p>Where The cooking style varies from region to region</p>
+		<img src="examples/imgs/IN1.jpg" alt="Indian-food" />
+	</div>
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="intro">
+				<h1>South East eat street</h1>
+				<p>Let us know your test</p>
+				<img src="examples/imgs/Logo.jpg" alt="slider" />
+			</div>
+
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="examples/imgs/CH1.jpg" alt="Chinese-food" />
+				<h1>Chinese</h1>
+				<p>Food that will water your mouth</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="examples/imgs/JP1.jpg" alt="Japanese-food" />
+				<h1>Japanese</h1>
+				<p>An abundance of gastronomical delights with a boundless variety!</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Maxican</h1>
+			<p>From tacos and nachos to margaritas</p>
+			<img src="examples/imgs/MX1.jpg" alt="Maxican-food" />
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Our Timings</h1>
+			<p>
+			Let us Serve you 
+				<br /><br /><br /><br /><br /><br />
+			</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+© Golden Webdevelopers
